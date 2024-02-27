@@ -16,10 +16,10 @@ pids
 
 # Dependency directories (for npm or yarn)
 # in case you use npm
-package-lock.json
+#package-lock.json
 
 # in case you use yarn
-yarn.lock
+#yarn.lock
 
 # Production build
 build/
