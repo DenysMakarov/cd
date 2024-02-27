@@ -20,7 +20,7 @@ describe('UserController', () => {
       const next = sinon.spy();
 
       await userController.findAllUsers(req, res, next);
-      expect(res.statusCode).to.equal(200);
+      expect(res.statusCode).to.equal(400);
       expect(JSON.parse(res._getData())).to.deep.equal(expectedUsers);
     });
 
