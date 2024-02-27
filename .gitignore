@@ -1,0 +1,33 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file (if you have one)
+.env
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories (for npm or yarn)
+# in case you use npm
+package-lock.json
+
+# in case you use yarn
+yarn.lock
+
+# Production build
+build/
+
+# Editor/IDE specific files
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
