@@ -13,7 +13,6 @@ const options = {
 };
 const swaggerSpecs = swaggerJsdoc(options);
 
-const Hello = "Hello World"
 
 const app = express();
 app.use(cors());
