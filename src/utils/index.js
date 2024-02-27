@@ -1,5 +1,5 @@
 const {User, Role} = require("../models");
-//Hello
+
 const beforeAfter = async () => {
     try {
         await User.destroy({truncate: true, cascade: true})
@@ -34,9 +34,9 @@ const beforeAfter = async () => {
             // Assign roles to the user
             await Promise.all(
                 user.Roles.map(async ({name}) => {
-                    const role = await Role.findOne({where: {name}});
-                    if (role) {
-                        await userInstance.addRole(role);
+                    const Role = await Role.findOne({where: {name}});
+                    if (Role) {
+                        await userInstance.addRole(Role);
                     }
                 })
             );
